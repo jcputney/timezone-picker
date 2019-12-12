@@ -1,5 +1,5 @@
 /**
- * @version: 1.0.2
+ * @version: 1.0.3
  * @author: Keval Bhatt 
  * @copyright: Copyright (c) 2015 Keval Bhatt. All rights reserved.
  * @license: Licensed under the MIT license. See http://www.opensource.org/licenses/mit-license.php
@@ -153,7 +153,7 @@
             }
             if (options.selectBox) {
                 var select = this.genrateElement('select', {
-                    'class': 'btn btn-default dropdown-toggle',
+                    'class': 'form-control dropdown-toggle',
                 }, option);
                 containerArr.push(select);
             }
@@ -296,8 +296,7 @@
                 '.Cbox .quickLink span:hover {color:#FFF;background-color: #496A84;  cursor: pointer;}' +
                 '.Cbox select{width: 45%;float: left;height: 27px; padding: 0px 0px 0px 10px;}' +
                 '.Cbox .quickLink span.active {color: #FFF; background-color: #496A84;}' +
-                '.Cbox .quickLink span{ font-weight: 300; border-radius: 3px; color: #000; background-color: #FFF; border: solid 1px #CCC;margin-left: 10px;' +
-                'font-size: 9px;padding: 4px 6px 4px 6px;}';
+                '.Cbox .quickLink span{ font-weight: 300; border-radius: 3px; color: #000; background-color: #FFF; border: solid 1px #CCC; margin-left: 10px; font-size: 0.7rem; padding: 4px 6px 4px 6px; }';
             document.getElementsByTagName('head')[0].appendChild(style);
 
         }
