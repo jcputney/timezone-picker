@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevalbhatt/timezone-picker.git"
+    "url": "git+https://github.com/jcputney/timezone-picker.git"
   },
   "keywords": [
     "jquery-timezone",
@@ -21,7 +21,7 @@
   "author": "Keval Bhatt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kevalbhatt/timezone-picker/issues"
+    "url": "https://github.com/jcputney/timezone-picker/issues"
   },
-  "homepage": "https://github.com/kevalbhatt/timezone-picker#readme"
+  "homepage": "https://github.com/jcputney/timezone-picker#readme"
 }
