@@ -86,6 +86,7 @@
             "EAT": "EAT"
         }],
         selectBox: true,
+        selectId: null,
         showHoverText: true,
         hoverText: null,
         dayLightSaving: ((typeof moment == "function") ? (true) : (false))
@@ -152,9 +153,13 @@
                 }, timezone[index].timezone + " (" + ((options.dayLightSaving) ? (moment().tz(timezone[index].timezone).zoneName()) : (timezone[index].zoneName)) + ")"));
             }
             if (options.selectBox) {
-                var select = this.genrateElement('select', {
+                var selectOptions = {
                     'class': 'form-control dropdown-toggle',
-                }, option);
+                };
+                if(options.selectId !== null) {
+                   selectOptions['id'] = options.selectId; 
+                }
+                var select = this.genrateElement('select', selectOptions , option);
                 containerArr.push(select);
             }
 
