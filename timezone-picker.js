@@ -87,6 +87,8 @@
         }],
         selectBox: true,
         selectId: null,
+        selectLabelId: null,
+        selectLabel: null,
         showHoverText: true,
         hoverText: null,
         dayLightSaving: ((typeof moment == "function") ? (true) : (false))
@@ -158,6 +160,12 @@
                 };
                 if(options.selectId !== null) {
                    selectOptions['id'] = options.selectId; 
+                }
+                if(options.selectLabel !== null) {
+                   selectOptions['title'] = options.selectLabel; 
+                }
+                if(options.selectLabelId !== null) {
+                   selectOptions['aria-labelledby'] = options.selectLabelId; 
                 }
                 var select = this.genrateElement('select', selectOptions , option);
                 containerArr.push(select);
